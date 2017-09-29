@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:backgroundTint="@color/tan_background"
+    android:elevation="4dp"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/movieimage"
+            android:layout_marginTop="20dp"
+            android:layout_width="@dimen/list_item_width"
+            android:layout_height="@dimen/list_item_height"
+            android:layout_marginLeft="10dp"
+            tools:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/moviename"
+            android:layout_width="200dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/movieimage"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/movieimage"
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            tools:text="luttiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii" />
+
+
+        <TextView
+            android:id="@+id/moviereleasedate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/movieimage"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            tools:text="lutti" />
+
+        <ImageView
+            android:id="@+id/arrowimage"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="16dp"
+            android:src="@mipmap/ic_play_arrow_white_24dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/movierating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/moviereleasedate"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/arrowimage"
+            android:layout_marginRight="16dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            tools:text="lutti" />
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
